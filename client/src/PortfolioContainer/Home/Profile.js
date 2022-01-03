@@ -22,6 +22,13 @@ export default function Profile() {
                             <i class="fa fa-linkedin"></i>
                         </a>
                     </div>
+
+                    <div className='profile-details-name'>
+                        <span className='primary-text'>
+                            {" "}
+                            Hello, I'M <span className='highlighted-text'>Muhammed</span>
+                        </span>
+                    </div>
                 </div>
             </div>
         </div>
