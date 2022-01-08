@@ -70,6 +70,12 @@
     .header-option-seperator{
         margin: 0;
     }
+    .selected-header-option{
+        color: var(--white);
+    }
+    .header-option{
+        color: var(--white);
+    }
 }
 
 
