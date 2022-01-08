@@ -67,6 +67,9 @@
         opacity: 0.8;
         transition: all 0.8s ease-out;
     }
+    .header-option-seperator{
+        margin: 0;
+    }
 }
 
 
