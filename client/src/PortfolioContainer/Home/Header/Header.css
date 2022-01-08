@@ -12,7 +12,6 @@
     width:70%;
     color: var(--white);
 }
-
 .header-logo{
     font-size: 35px;
     font-family: "Poppins ExtraBold";
@@ -27,4 +26,8 @@
     font-size: 16px;
     cursor: pointer;
     font-weight: 600;
+}
+.header-hamburger{
+    display: none;
+    color: var(--white);
 }
