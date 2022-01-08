@@ -8,11 +8,11 @@ export default function ScreenHeading(props) {
             </div>
 
             {
-                (props.subHeading) ?(
+                (props.subHeading) ? (
                     <div className='screen-sub-heading'>
                         <span>{props.subHeading}</span>
                     </div>
-                ): <div></div>
+                ) : <div></div>
             }
 
             <div className='heading-seperator'>
