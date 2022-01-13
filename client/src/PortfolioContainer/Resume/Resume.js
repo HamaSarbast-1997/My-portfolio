@@ -21,7 +21,12 @@ export default function Resume(props) {
                         <div></div>
                     )}
                 </div>
-                
+                <div className='resume-sub-heading'>
+                    <span>{props.subHeading ? props.subHeading : ''}</span>
+                </div>
+                <div className='resume-heading-description'>
+                    <span>{props.description ? props.description : ''}</span>
+                </div>
             </div>
         </div>
     }
