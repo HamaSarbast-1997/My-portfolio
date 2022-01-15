@@ -116,12 +116,21 @@ export default function Resume(props) {
            />
            <div className='experience-description'>
                <span className='resume-description-text'>
-                   Currently working as Full Stack developer 
+                   Currently working as Full Stack developer. 
                </span>
            </div>
            <div className='experience-description'>
                <span className='resume-description-text'>
-                        -Developed website and system for client with the dashboard for managing the products , managing services , users , payments.
+                        - Developed website and system for client with the dashboard for managing the products , managing services , users , payments.
+               </span>
+               <br/>
+               <span className='resume-description-text'>
+                   - Integrated the web app with backend services to 
+                   create new user onboarding application with daynamic form content.
+               </span>
+               <br/>
+               <span className='resume-description-text'>
+                   - I stretch my mental capacity to improve my skills.
                </span>
            </div>
 
