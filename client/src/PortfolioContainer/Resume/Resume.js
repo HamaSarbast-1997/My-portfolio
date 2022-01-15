@@ -85,6 +85,44 @@ export default function Resume(props) {
         },
     ]
 
+    const resumeDetails = [
+        <div className='resume-screen-container' key="education">
+            <ResumeHeading
+                heading={"Salahaddin Universty-College of Engineering"}
+                subHeading={"BACHELOR DEGREE IN SOFTWARE AND INFORMATICS ENGINEERING"}
+                fromDate={"2017"}
+                toDate={"2021"}
+            />
+               <ResumeHeading
+                heading={"Cambridge Center"}
+                subHeading={"English Course"}
+                fromDate={"2017"}
+                toDate={"2018"}
+            />
+            <ResumeHeading
+                heading={"High School"}
+                subHeading={"Command Secondary School Kurdistan high school"}
+                fromDate={"2013"}
+                toDate={"2017"}
+            />
+
+        </div>,
+       <div className='resume-screen-container' key="Work-Experience">
+           <ResumeHeading
+               heading={"Lucid-Source LTD"}
+               subHeading={"FULL STACK DEVELOPER"}
+               fromDate={"2021"}
+               toDate={"Present"}
+           />
+           <div className='experience-description'>
+               <span className='resume-description-text'>
+                   Currently working as Full Stack developer 
+               </span>
+           </div>
+           
+       </div>
+    ]
+
     let fadeInScreenHandler = (screen) => {
         if (screen.fadeInScreen !== props.id) return;
         Animations.animations.fadeInScreen(props.id);
