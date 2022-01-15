@@ -42,7 +42,6 @@ const Resume = (props) => {
     );
   };
 
-  /* STATIC RESUME DATA FOR THE LABELS*/
   const resumeBullets = [
     { label: "Education", logoSrc: "education.svg" },
     { label: "Work History", logoSrc: "work-history.svg" },
@@ -51,65 +50,64 @@ const Resume = (props) => {
     { label: "Interests", logoSrc: "interests.svg" },
   ];
 
-  //here we have
   const programmingSkillsDetails = [
-    { skill: "JavaScript", ratingPercentage: 85 },
-    { skill: "React JS", ratingPercentage: 85 },
-    { skill: "React Native", ratingPercentage: 85 },
-    { skill: "Express JS", ratingPercentage: 89 },
-    { skill: "Node JS", ratingPercentage: 89 },
+    { skill: "JavaScript", ratingPercentage: 90 },
+    { skill: "React JS", ratingPercentage: 78 },
+    { skill: "Node JS", ratingPercentage: 95 },
+    { skill: "Express JS", ratingPercentage: 95 },
     { skill: "Mongo Db", ratingPercentage: 70 },
-    { skill: "Core Java", ratingPercentage: 80 },
-    { skill: "HTML", ratingPercentage: 80 },
-    { skill: "CSS", ratingPercentage: 80 },
+    { skill: "SQL", ratingPercentage: 89 },
+    { skill: "HTML", ratingPercentage: 96 },
+    { skill: "CSS", ratingPercentage: 50 },
   ];
 
   const projectsDetails = [
     {
-      title: "Personal Portfolio Website",
-      duration: { fromDate: "2020", toDate: "2021" },
-      description:
-        "A Personal Portfolio website to showcase all my details and projects at one place.",
-      subHeading: "Technologies Used: React JS, Bootsrap",
+        title:"Ecommerce Web Application",
+        duration:{fromDate:"2020" , toDate:"2021"},
+        description:"Work with team to develop and implement online business plans and establish brand roadmaps and developing & improving solutions by preparing & evaluating alternative workflow solutions",
+        subHeading:"Technologies Used: Node js , MongoDB"
     },
     {
-      title: "Mobile E-shop ",
-      duration: { fromDate: "2020", toDate: "2021" },
-      description:
-        "An ecommerce application designed to sell products online wth payment system integration",
-      subHeading:
-        "Technologies Used:  React Native, Mongo DB, Express Js, Node Js, Redux.",
+        title:"Realestate Platform",
+        duration:{fromDate:"2021" , toDate:"2022"},
+        description:"Work with team in Lucid-Source LTD company to develop and implement realestate platform as a service for realestates",
+        subHeading:"Technologies Used: Node js , SQL , React js"
     },
     {
-      title: "Ecommerce Website ",
-      duration: { fromDate: "2020", toDate: "2021" },
-      description:
-        "Online ecommerce website for showcasing and selling products onlne with payment system integration, both Paypal and Stripe",
-      subHeading:
-        "Technologies Used: Mongo DB, Epress Js, React Js, Node JS, Redux, Bootstrap.",
+        title:"Web Development",
+        duration:{fromDate:"2021" , toDate:"2022"},
+        description:"Work with team in Lucid-Source LTD company to develop and implement over 10 website for the Lucid client  exp: Lalav Group , HITEX  , AVI Organazation , MCT Group , Hollywood smile etc... ",
+        subHeading:"Technologies Used: Node js , SQL , React js"
     },
+    // {
+    //     title:"Personal Portfolio Website",
+    //     duration:{fromDate:"2022" , toDate:"2022"},
+    //     description:"A Personal website to showcase all my details and projects at one place. ",
+    //     subHeading:"Technologies Used: Node js , React js"
+    // },
   ];
 
   const resumeDetails = [
     <div className="resume-screen-container" key="education">
       <ResumeHeading
-        heading={"University of Legon Accra, Ghana"}
-        subHeading={"BACHELOR OF SCIENCE INFORMATION TECHNOLOGY"}
-        fromDate={"2014"}
-        toDate={"2018"}
+        heading={"Salahaddin Universty-College of Engineering"}
+        subHeading={"BACHELOR DEGREE IN SOFTWARE AND INFORMATICS ENGINEERING"}
+        fromDate={"2017"}
+        toDate={"2021"}
       />
 
       <ResumeHeading
-        heading={"National Youth Service Corps"}
-        subHeading={"Ministry Of Science And Technogy. Uyo Akwa Ibom State"}
-        fromDate={"2019"}
-        toDate={"2020"}
+        heading={"Cambridge Center"}
+        subHeading={"Cambridge Center"}
+        fromDate={"2017"}
+        toDate={"2018"}
       />
       <ResumeHeading
         heading={"High School "}
-        subHeading={"Command Secondary School Mbiri"}
-        fromDate={"2007"}
-        toDate={"2012"}
+        subHeading={"Command Secondary School Kurdistan high school"}
+        fromDate={"2013"}
+        toDate={"2017"}
       />
     </div>,
 
@@ -117,21 +115,20 @@ const Resume = (props) => {
     <div className="resume-screen-container" key="work-experience">
       <div className="experience-container">
         <ResumeHeading
-          heading={"Ehizeex Technoloy"}
-          subHeading={"FULL STACK DEVELOPER INTERN"}
+          heading={"Lucid-Source LTD"}
+          subHeading={"FULL STACK DEVELOPER"}
           fromDate={"2021"}
           toDate={"Present"}
         />
         <div className="experience-description">
           <span className="resume-description-text">
-            Currently working as MERN stack web and mobile developer and also an
-            online instructor on udemy.
+            Currently working as Full Stack developer
           </span>
         </div>
         <div className="experience-description">
           <span className="resume-description-text">
-            - Developed an ecommerce website for client with the dashboard for
-            managing the products, managing reviews, users, payment etc. .
+            - Developed website and system for client with the dashboard
+            managing the products, managing services, users, payment etc. .
           </span>
           <br />
           <span className="resume-description-text">
@@ -140,8 +137,7 @@ const Resume = (props) => {
           </span>
           <br />
           <span className="resume-description-text">
-            - I stretch my mental capacity to develope UI as per the given
-            designs.
+            - I stretch my mental capacity to improve my skills.
           </span>
           <br />
         </div>
@@ -183,10 +179,10 @@ const Resume = (props) => {
 
     /* Interests */
     <div className="resume-screen-container" key="interests">
-      <ResumeHeading
+      {/* <ResumeHeading
         heading="Teaching"
         description="Apart from being a tech enthusiast and a code writer, i also love to teach people what i know simply because i believe in sharing."
-      />
+      /> */}
       <ResumeHeading
         heading="Music"
         description="Listening to soothing music is something i can never compromise with, skimming through Spotify's pop songs charts is at times the best stress reliever that i can get my hands on."
@@ -220,8 +216,8 @@ const Resume = (props) => {
       >
         <img
           className="bullet-logo"
-          src={require(`../../assets/Resume/${bullet.logoSrc}`).default}
-          alt="B"
+          src={require(`../../assets/Resume/${bullet.logoSrc}`)}
+          alt="oops,,, no internet connection"
         />
         <span className="bullet-label">{bullet.label}</span>
       </div>
@@ -239,12 +235,12 @@ const Resume = (props) => {
     );
   };
 
-  useEffect(() => {
-    return () => {
-      /* UNSUBSCRIBE THE SUBSCRIPTIONS */
-      fadeInSubscription.unsubscribe();
-    };
-  }, [fadeInSubscription]);
+//   useEffect(() => {
+//     return () => {
+//       /* UNSUBSCRIBE THE SUBSCRIPTIONS */
+//       fadeInSubscription.unsubscribe();
+//     };
+//   }, [fadeInSubscription]);
 
   return (
     <div
