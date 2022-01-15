@@ -38,6 +38,52 @@ export default function Resume(props) {
         {label:"Projects" , logoSrc:"projects.svg"},
         {label:"Interests" , logoSrc:"interests.svg"},
     ]
+    const programingSkillDetails = [
+        {skill:"JavaScript" , ratingPercentage:90},
+        {skill:"Node js" , ratingPercentage:94},
+        {skill:"Express js" , ratingPercentage:95},
+        {skill:"React js" , ratingPercentage:75},
+        {skill:"Laravel" , ratingPercentage:40},
+        {skill:"SQL" , ratingPercentage:90},
+        {skill:"Mongo Db" , ratingPercentage:70},
+        {skill:"Knex js" , ratingPercentage:90},
+        {skill:"Sequelize" , ratingPercentage:90},
+        {skill:"HTML" , ratingPercentage:65},
+        {skill:"CSS" , ratingPercentage:60},
+    ]
+
+    const projectDetails = [
+        {
+            title:"Ecommerce Web Application",
+            duration:{fromDate:"2020" , toDate:"2021"},
+            description:"Work with team to develop and implement online business plans and establish brand roadmaps and developing & improving solutions by preparing & evaluating alternative workflow solutions",
+            subHeading:"Technologies Used: Node js , MongoDB"
+        },
+        {
+            title:"Realestate Platform",
+            duration:{fromDate:"2021" , toDate:"2022"},
+            description:"Work with team in Lucid-Source LTD company to develop and implement realestate platform as a service for realestates",
+            subHeading:"Technologies Used: Node js , SQL , React js"
+        },
+        {
+            title:"Web Development",
+            duration:{fromDate:"2021" , toDate:"2022"},
+            description:"Work with team in Lucid-Source LTD company to develop and implement over 10 website for the Lucid client  exp: Lalav Group , HITEX  , AVI Organazation , MCT Group , Hollywood smile etc... ",
+            subHeading:"Technologies Used: Node js , SQL , React js"
+        },
+        {
+            title:"Property Web Application",
+            duration:{fromDate:"2021" , toDate:"2022"},
+            description:"Work with team in Lucid-Source LTD company to develop and implement the property web application for redidential project ",
+            subHeading:"Technologies Used: Node js , SQL , React js"
+        },
+        {
+            title:"Personal Portfolio Website",
+            duration:{fromDate:"2022" , toDate:"2022"},
+            description:"A Personal website to showcase all my details and projects at one place. ",
+            subHeading:"Technologies Used: Node js , React js"
+        },
+    ]
 
     let fadeInScreenHandler = (screen) => {
         if (screen.fadeInScreen !== props.id) return;
