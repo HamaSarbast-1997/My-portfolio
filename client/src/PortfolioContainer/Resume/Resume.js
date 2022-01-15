@@ -119,7 +119,13 @@ export default function Resume(props) {
                    Currently working as Full Stack developer 
                </span>
            </div>
-           
+           <div className='experience-description'>
+               <span className='resume-description-text'>
+                        -Developed website and system for client with the dashboard for managing the products , managing services , users , payments.
+               </span>
+           </div>
+
+
        </div>
     ]
 
