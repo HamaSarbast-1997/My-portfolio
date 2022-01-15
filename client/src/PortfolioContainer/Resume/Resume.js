@@ -77,7 +77,7 @@ const Resume = (props) => {
     {
         title:"Web Development",
         duration:{fromDate:"2021" , toDate:"2022"},
-        description:"Work with team in Lucid-Source LTD company to develop and implement over 10 website for the Lucid client  exp: Lalav Group , HITEX  , AVI Organazation , MCT Group , Hollywood smile etc... ",
+        description:"Work with team in Lucid-Source LTD company to develop and implement over 10 website for the Lucid client ",
         subHeading:"Technologies Used: Node js , SQL , React js"
     },
     // {
@@ -91,7 +91,7 @@ const Resume = (props) => {
   const resumeDetails = [
     <div className="resume-screen-container" key="education">
       <ResumeHeading
-        heading={"Salahaddin Universty-College of Engineering"}
+        heading={"Salahaddin Universty"}
         subHeading={"BACHELOR DEGREE IN SOFTWARE AND INFORMATICS ENGINEERING"}
         fromDate={"2017"}
         toDate={"2021"}
@@ -111,7 +111,6 @@ const Resume = (props) => {
       />
     </div>,
 
-    /* WORK EXPERIENCE */
     <div className="resume-screen-container" key="work-experience">
       <div className="experience-container">
         <ResumeHeading
@@ -144,7 +143,6 @@ const Resume = (props) => {
       </div>
     </div>,
 
-    /* PROGRAMMING SKILLS */
     <div
       className="resume-screen-container programming-skills-container"
       key="programming-skills"
@@ -234,13 +232,6 @@ const Resume = (props) => {
       </div>
     );
   };
-
-//   useEffect(() => {
-//     return () => {
-//       /* UNSUBSCRIBE THE SUBSCRIPTIONS */
-//       fadeInSubscription.unsubscribe();
-//     };
-//   }, [fadeInSubscription]);
 
   return (
     <div
