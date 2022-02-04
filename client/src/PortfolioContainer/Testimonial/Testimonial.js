@@ -25,6 +25,8 @@ export default function Testimonial(props) {
         <div className='container'>
           <div className='row'>
             <OwlCarousel className='owl-carousel' id='testimonial-carousel'>
+
+
               <div className='col-lg-12'>
                 <div className='testi-item'>
                   <div className='testi-comment'>
@@ -54,10 +56,126 @@ export default function Testimonial(props) {
                     </ul>
                   </div>
                   <div className='client-info'>
-                    <img src='img/Testimonial/lady.png' alt='No Internet Connection'></img>
+                    <img src='img/Testimonial/lady.png' alt='No Internet Connection'
+                    ></img>
+                    <h5>Miran Kamal</h5>
+                    <p>Mobile Application Developer</p>
                   </div>
                 </div>
               </div>
+
+              <div className='col-lg-12'>
+                <div className='testi-item'>
+                  <div className='testi-comment'>
+                    <p>
+                      <i className='fa fa-quote-left'/>
+                      I patronized Ehizeex and when He delivered, I honestly
+                      fell in love with the project He is a very honest guy and
+                      he delivers ontime
+                      <i className='fa fa-quote-right'/>
+                    </p>
+                    <ul className='stars list-unstyled'>
+                      <li>
+                        <i className='fa fa-star'/>
+                      </li>
+                      <li>
+                        <i className='fa fa-star'/>
+                      </li>
+                      <li>
+                        <i className='fa fa-star'/>
+                      </li>
+                      <li>
+                        <i className='fa fa-half-alt'/>
+                      </li>
+                      <li>
+                        <i className='fa fa-star'/>
+                      </li>
+                    </ul>
+                  </div>
+                  <div className='client-info'>
+                    <img src='img/Testimonial/lady.png' alt='No Internet Connection'
+                    ></img>
+                    <h5>Miran Kamal</h5>
+                    <p>Mobile Application Developer</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className='col-lg-12'>
+                <div className='testi-item'>
+                  <div className='testi-comment'>
+                    <p>
+                      <i className='fa fa-quote-left'/>
+                      I patronized Ehizeex and when He delivered, I honestly
+                      fell in love with the project He is a very honest guy and
+                      he delivers ontime
+                      <i className='fa fa-quote-right'/>
+                    </p>
+                    <ul className='stars list-unstyled'>
+                      <li>
+                        <i className='fa fa-star'/>
+                      </li>
+                      <li>
+                        <i className='fa fa-star'/>
+                      </li>
+                      <li>
+                        <i className='fa fa-star'/>
+                      </li>
+                      <li>
+                        <i className='fa fa-half-alt'/>
+                      </li>
+                      <li>
+                        <i className='fa fa-star'/>
+                      </li>
+                    </ul>
+                  </div>
+                  <div className='client-info'>
+                    <img src='img/Testimonial/lady.png' alt='No Internet Connection'
+                    ></img>
+                    <h5>Miran Kamal</h5>
+                    <p>Mobile Application Developer</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className='col-lg-12'>
+                <div className='testi-item'>
+                  <div className='testi-comment'>
+                    <p>
+                      <i className='fa fa-quote-left'/>
+                      I patronized Ehizeex and when He delivered, I honestly
+                      fell in love with the project He is a very honest guy and
+                      he delivers ontime
+                      <i className='fa fa-quote-right'/>
+                    </p>
+                    <ul className='stars list-unstyled'>
+                      <li>
+                        <i className='fa fa-star'/>
+                      </li>
+                      <li>
+                        <i className='fa fa-star'/>
+                      </li>
+                      <li>
+                        <i className='fa fa-star'/>
+                      </li>
+                      <li>
+                        <i className='fa fa-half-alt'/>
+                      </li>
+                      <li>
+                        <i className='fa fa-star'/>
+                      </li>
+                    </ul>
+                  </div>
+                  <div className='client-info'>
+                    <img src='img/Testimonial/lady.png' alt='No Internet Connection'
+                    ></img>
+                    <h5>Miran Kamal</h5>
+                    <p>Mobile Application Developer</p>
+                  </div>
+                </div>
+              </div>
+
+
             </OwlCarousel>
           </div>
         </div>
