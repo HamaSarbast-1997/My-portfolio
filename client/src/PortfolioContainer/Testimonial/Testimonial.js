@@ -203,7 +203,7 @@ export default function Testimonial(props) {
         </div>
       </section>
       <div className="footer-image">
-        {/* <img src={shape} alt="Phot0 not responding" /> */}
+       <img/>
       </div>
     </div>
 
