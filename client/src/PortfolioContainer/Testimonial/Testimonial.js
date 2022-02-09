@@ -117,7 +117,7 @@ export default function Testimonial(props) {
                   <div className='client-info'>
                     <img src='img/Testimonial/miran.png' alt='No Internet Connection'
                     ></img>
-                    <h5>Miran Kamal</h5>
+                    <h5>Ahmed Nihmat</h5>
                     <p>Mobile Application Developer</p>
                   </div>
                 </div>
@@ -154,7 +154,7 @@ export default function Testimonial(props) {
                   <div className='client-info'>
                     <img src='img/Testimonial/miran.png' alt='No Internet Connection'
                     ></img>
-                    <h5>Miran Kamal</h5>
+                    <h5>Ali Amjad</h5>
                     <p>Mobile Application Developer</p>
                   </div>
                 </div>
@@ -191,7 +191,7 @@ export default function Testimonial(props) {
                   <div className='client-info'>
                     <img src='img/Testimonial/miran.png' alt='No Internet Connection'
                     ></img>
-                    <h5>Miran Kamal</h5>
+                    <h5>Aram Rafiq</h5>
                     <p>Mobile Application Developer</p>
                   </div>
                 </div>
