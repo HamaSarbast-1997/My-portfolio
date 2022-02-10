@@ -62,6 +62,15 @@ export default function ContactMe(props) {
                         <h4>Send Your Email Here!</h4>
                         <img src={imagBack} alt="image not found" />
                     </div>
+                    <form>
+                        <p>{banner}</p>
+                        <label htmlFor='name'>Name</label>
+                        <input type='text' />
+                        <label htmlFor='email'>Email</label>
+                        <input type='email' />
+                        <label htmlFor='message'>Message</label>
+                        <input type='text' />
+                    </form>
                 </div>
             </div>
         </div>
