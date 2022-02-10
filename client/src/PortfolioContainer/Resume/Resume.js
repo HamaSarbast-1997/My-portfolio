@@ -63,22 +63,22 @@ const Resume = (props) => {
 
   const projectsDetails = [
     {
-        title:"Ecommerce Web Application",
-        duration:{fromDate:"2020" , toDate:"2021"},
-        description:"Work with team to develop and implement online business plans and establish brand roadmaps and developing & improving solutions by preparing & evaluating alternative workflow solutions",
-        subHeading:"Technologies Used: Node js , MongoDB"
+      title: "Ecommerce Web Application",
+      duration: { fromDate: "2020", toDate: "2021" },
+      description: "Work with team to develop and implement online business plans and establish brand roadmaps and developing & improving solutions by preparing & evaluating alternative workflow solutions",
+      subHeading: "Technologies Used: Node js , MongoDB"
     },
     {
-        title:"Realestate Platform",
-        duration:{fromDate:"2021" , toDate:"2022"},
-        description:"Work with team in Lucid-Source LTD company to develop and implement realestate platform as a service for realestates",
-        subHeading:"Technologies Used: Node js , SQL , React js"
+      title: "Realestate Platform",
+      duration: { fromDate: "2021", toDate: "2022" },
+      description: "Work with team in Lucid-Source LTD company to develop and implement realestate platform as a service for realestates",
+      subHeading: "Technologies Used: Node js , SQL , React js"
     },
     {
-        title:"Web Development",
-        duration:{fromDate:"2021" , toDate:"2022"},
-        description:"Work with team in Lucid-Source LTD company to develop and implement over 10 website for the Lucid client ",
-        subHeading:"Technologies Used: Node js , SQL , React js"
+      title: "Web Development",
+      duration: { fromDate: "2021", toDate: "2022" },
+      description: "Work with team in Lucid-Source LTD company to develop and implement over 10 website for the Lucid client ",
+      subHeading: "Technologies Used: Node js , SQL , React js"
     },
     // {
     //     title:"Personal Portfolio Website",
