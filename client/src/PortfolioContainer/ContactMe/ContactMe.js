@@ -21,6 +21,17 @@ export default function ContactMe(props) {
     const [message, setMessage] = useState("");
     const [banner, setBanner] = useState("");
     const [bool, setBool] = useState(false);
+
+    const handleName = (e) => {
+        setName(e.target.value)
+    }
+    const handleEmail = (e) => {
+        setEmail(e.target.value)
+    }
+    const handleMessage = (e) => {
+        setMessage(e.target.value)
+
+    }
     return (
         <div className='main-container' id={props.id || ''}>
             <ScreenHeading
@@ -65,7 +76,12 @@ export default function ContactMe(props) {
                     <form>
                         <p>{banner}</p>
                         <label htmlFor='name'>Name</label>
-                        <input type='text' />
+                        <input
+                            type='text'
+                            onChange={handleName}
+                            value={name}
+
+                        />
                         <label htmlFor='email'>Email</label>
                         <input type='email' />
                         <label htmlFor='message'>Message</label>
