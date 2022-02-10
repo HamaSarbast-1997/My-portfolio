@@ -83,9 +83,17 @@ export default function ContactMe(props) {
 
                         />
                         <label htmlFor='email'>Email</label>
-                        <input type='email' />
+                        <input
+                            type='email'
+                            onChange={handleEmail}
+                            value={email}
+                        />
                         <label htmlFor='message'>Message</label>
-                        <textarea type='text' />
+                        <textarea
+                            type='text'
+                            onChange={handleMessage}
+                            value={message}
+                        />
                         <div className='send-btn'>
                             <button type='submit'>Send <i className='fa fa-paper-plane' /></button>
                         </div>
