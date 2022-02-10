@@ -1,0 +1,14 @@
+.main-container{
+    min-height: 100vh;
+
+}
+.central-form{
+    max-width: 1100px;
+    padding: 10px;
+    display: flex;
+    border-radius: 12px;
+    margin: 0 auto;
+    flex-direction: column;
+    justify-content: center;
+    background-color:#1f2235 ;
+}
