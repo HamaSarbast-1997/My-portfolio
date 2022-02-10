@@ -12,3 +12,28 @@
     justify-content: center;
     background-color:#1f2235 ;
 }
+.centralform h2{
+    color: white;
+    letter-spacing: 0.2rem;
+    margin-bottom: 20px;
+}
+.back-form{
+    max-width: 380px;
+    margin: 0 auto;
+
+}
+.back-form .img-back{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.img-back h4{
+    color: white;
+    letter-spacing: 0.3rem;
+    font-weight: 400;
+    font-size: 18px;
+    opacity: 0,5;
+}
+.back-form .img-back img{
+    width: 100%;
+    opacity: 0.5;
+}
