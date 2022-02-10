@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Typical from 'react-typical';
 
 import imagBack from '../../../src/images/mailz.jpeg';
@@ -15,6 +15,12 @@ export default function ContactMe(props) {
     };
     const fadeInSubscription =
         ScrollService.currentScreenFadeIn.subscribe(fadeInScreenHandler);
+
+    const [name, setName] = useState("");
+    const [email, setEmail] = useState("");
+    const [message, setMessage] = useState("");
+    const [banner, setBanner] = useState("");
+    const [bool, setBool] = useState(false);
     return (
         <div className='main-container' id={props.id || ''}>
             <ScreenHeading
@@ -50,6 +56,12 @@ export default function ContactMe(props) {
                     <a href='https://www.linkedin.com/in/muhammed-sarbast-358238202/'>
                         <i class="fa fa-linkedin"></i>
                     </a>
+                </div>
+                <div className='back-form'>
+                    <div className='img-back'>
+                        <h4>Send Your Email Here!</h4>
+                        <img src={imagBack} alt="image not found"/>
+                    </div>
                 </div>
             </div>
         </div>
