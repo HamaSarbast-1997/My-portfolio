@@ -33,6 +33,10 @@ export default function ContactMe(props) {
         setMessage(e.target.value)
 
     }
+
+    const submitForm = (e)=>{
+        e.preventDefault()
+    }
     return (
         <div className='main-container' id={props.id || ''}>
             <ScreenHeading
@@ -66,7 +70,7 @@ export default function ContactMe(props) {
                         <h4>Send Your Email Here!</h4>
                         <img src={imagBack} alt="image not found" />
                     </div>
-                    <form>
+                    <form onSubmit={submitForm} >
                         <p>{banner}</p>
                         <label htmlFor='name'>Name</label>
                         <input
