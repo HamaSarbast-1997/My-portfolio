@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
-import Typical from 'react-typical';
 import axios from 'axios';
-
+import {toast} from 'react-toastify';
 import imagBack from '../../../src/images/mailz.jpeg';
 import load1 from '../../../src/images/load2.gif';
 import ScreenHeading from '../../utilities/ScreenHeading/ScreenHeading';
@@ -35,7 +34,7 @@ export default function ContactMe(props) {
 
     }
 
-    const submitForm = (e)=>{
+    const submitForm = async (e)=>{
         e.preventDefault();
         try {
             let data = {
@@ -44,7 +43,16 @@ export default function ContactMe(props) {
             message
         };
         setBool(true);
-        const res = axios.post(`/contact` , data) 
+        const res = await axios.post(`/contact` , data);
+        if(name.length === 0 || email.length === 0 || message.length ===0){
+            setBanner(res.data.msg)
+            toast.error(res.data.msg)
+            setBool(false)
+        }else if(res.status === 200){
+             setBanner(res.data.msg)
+            toast.success(res.data.msg)
+            setBool(false)
+        } 
         } catch (error) {
            console.log(error) 
         }
@@ -106,7 +114,11 @@ export default function ContactMe(props) {
                             value={message}
                         />
                         <div className='send-btn'>
-                            <button type='submit'>Send <i className='fa fa-paper-plane' /></button>
+                            <button type='submit'>Send <i className='fa fa-paper-plane' /> 
+                            {
+                            bool? (<b className='load'><img src={load1} alt='image not responding'/></b>) : ("")
+                            }
+                            </button>
                         </div>
                     </form>
                 </div>
