@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Typical from 'react-typical';
+import axios from 'axios';
 
 import imagBack from '../../../src/images/mailz.jpeg';
 import load1 from '../../../src/images/load2.gif';
@@ -35,7 +36,20 @@ export default function ContactMe(props) {
     }
 
     const submitForm = (e)=>{
-        e.preventDefault()
+        e.preventDefault();
+        try {
+            let data = {
+            name,
+            email,
+            message
+        };
+        setBool(true);
+        const res = axios.post(`/contact` , data) 
+        } catch (error) {
+           console.log(error) 
+        }
+       
+       
     }
     return (
         <div className='main-container' id={props.id || ''}>
